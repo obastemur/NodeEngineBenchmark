@@ -46,6 +46,6 @@ var runner = setInterval(function() {
   } else {
     clearInterval(runner);
 
-    console.log(totalTime / 10);
+    console.log("Average of 10 runs: ", totalTime / 10);
   }
 }, 128);
