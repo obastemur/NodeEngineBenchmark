@@ -7,9 +7,10 @@ jx runTest.js
 ```
 
 #### Sample Result
-MacBook Pro i7-2.7Ghz (JXcore 0.3.0.1 SM 34 / V8 3.14) Results;
-**SpiderMonkey**: 296.6 ms (Winner)
-**V8**: 330.6 ms
+MacBook Pro i7-2.7Ghz (JXcore 0.3.0.1 SM 34 / V8 3.14) Results;  
+**SpiderMonkey**: 296.6 ms (Winner)  
+**V8**: 330.6 ms  
+
 
 #### Intention
 Measure JS engine performance only
