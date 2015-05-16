@@ -13,5 +13,5 @@ MacBook Pro i7-2.7Ghz (JXcore 0.3.0.1 SM 34 / V8 3.14) Results;
 
 
 #### Intention
-Measure JS engine performance only
+Measure embedded JS engine performance
 
