@@ -29,23 +29,26 @@ var testVersion = '1.0.1';
 var folder = path.join(process.cwd(), 'sunspider-' + testVersion);
 var files = fs.readdirSync(folder);
 var totalTime = 0;
-var counter = 0;
+var counter = 0, subCounter = 1;
 var runner = setInterval(function() {
   if (counter < files.length) {
     var file = files[counter];
     counter++;
 
     if (path.extname(file) != '.js') return;
-    for (var i = 0; i < 10; i++) {
-      var out = jxcore.utils.cmdSync(process.argv[0] + " runSingle.js " + folder + path.sep + file);
-      if (out.exitCode) {
-        throw new Error(out.out);
-      }
-      totalTime += parseInt(out.out);
+
+    var out = jxcore.utils.cmdSync(process.argv[0] + " runSingle.js " + folder + path.sep + file);
+    if (out.exitCode) {
+      throw new Error(out.out);
     }
+    totalTime += parseInt(out.out);
+
+  } else if (subCounter < 10) {
+    counter = 0;
+    subCounter ++;
   } else {
     clearInterval(runner);
 
     console.log("Average of 10 runs: ", totalTime / 10);
   }
-}, 128);
+}, 1);
