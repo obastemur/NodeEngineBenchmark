@@ -47,6 +47,7 @@ NavierStokes: 24906
 **Total SunSpider AVG. Time 165.4 ms**
 
 
-#### Intention
-Measure embedded JS engine performance for Node.JS platform.
+#### LICENSE
+
+MIT
 
