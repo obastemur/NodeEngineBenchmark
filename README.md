@@ -1,8 +1,8 @@
-Run sunspider and octane tests locally on (alphabetical order) [IO.JS](http://iojs.org) / [JXcore](http://jxcore.com) / [Node.JS](http://nodejs.org) to measure the embedded JavaScript engine performance.
+Benchmark the embedded JavaScript Engine used with (in alphabetical order) [IO.JS](http://iojs.org) / [JXcore](http://jxcore.com) / [Node.JS](http://nodejs.org)
 
 #### Remarks
 
- - Test files are standard JS engine benchmarks.
+ - Test files are standard JS engine benchmarks. (SunSpider, and Octane)
  - Bechmarks do not measure the underlying framework's performance. So, this is not a comparison tool for i.e. JXcore vs Node etc.
  - This implementation is designed to stress the GC / calculations / memory stability of the engine within the framework.
 
